@@ -208,66 +208,7 @@ class UserLoginView(APIView):
 
 
 
-# ------------- user noti login  start ---------------------------
 
-class UserNotiLoginView(APIView):
-    serializer_class = UserLoginSerializer
-    permission_classes = (AllowAny, )
-    # throttle_scope = 'login_scope'
-    # throttle_classes = [ScopedRateThrottle,]
-    def post(self, request):
-        serializer = self.serializer_class(data=request.data,context={'request':request})
-        print(serializer)
-        valid = serializer.is_valid(raise_exception=True)
-        # User = serializer.data['email']
-        if valid:
-
-
-
-            status_code = status.HTTP_200_OK
-
-            userphoto = serializer.data['user_photo']
-            response = {
-                'success': True,
-                'statusCode': status_code,
-                'message': 'User logged in successfully',
-                'access': serializer.data['access'],
-                'refresh': serializer.data['refresh'],
-                'authenticatedUser': {
-                    'email': serializer.data['email'],
-                    # 'id':User.pk
-                    # 'id': serializer.data['id'],
-                    'role': serializer.data['role_id'],
-                    # 'user_photo':userphoto,
-                    # 'username':serializer.data['username'],
-                    # 'is_active':serializer.data['is_active']
-                }
-            }
-
-            email = serializer.data['email']
-            user = User.objects.filter(email = email)
-            user =  user.first()
-            # user.user_notification_token = request.data['user_notification_token']
-            # user.save()
-
-            # for same token 
-            # if not user.user_notification_token:
-            #     return Response(response, status=status_code)
-            #     or try pass
-            # else:
-            #     user.save()
-
-            return Response(response, status=status_code)
-
-
-
-
-
-
-
-
-
-# ------------------ user noti login end ---------------------------------------
 
 
 
