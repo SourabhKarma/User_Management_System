@@ -12,11 +12,11 @@ DO Read api_list.text to list all the apis
 
 Key Features
  Markup : 
-*Jwt authentication ,
-*User Login and registration ,
-*Throttling ,
-*Rest Apis ,
-*cros headers ,
+		*Jwt authentication ,
+		*User Login and registration ,
+		*Throttling ,
+		*Rest Apis ,
+		*cros headers ,
 
 
 Note - For windows user use python for linux user use python3 while running the commands.( I have used linux (ubuntu) )
