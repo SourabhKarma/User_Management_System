@@ -9,15 +9,14 @@ I have Created a backend of the project. The apis can be integrated the frontend
 
 DO Read api_list.text to list all the apis
 
-*** In folder contains a  file  name drf.jpg that gives the database Diagram
 
 Key Features
-
-Jwt authentication
-User Login and registration
-Throttling
-Rest Apis
-cros headers
+ Markup : 
+*Jwt authentication ,
+*User Login and registration ,
+*Throttling ,
+*Rest Apis ,
+*cros headers ,
 
 
 Note - For windows user use python for linux user use python3 while running the commands.( I have used linux (ubuntu) )
