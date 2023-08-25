@@ -11,7 +11,7 @@ DO Read api_list.text to list all the apis
 
 
 Key Features
- Markup : 
+
 		*Jwt authentication ,
 		*User Login and registration ,
 		*Throttling ,
