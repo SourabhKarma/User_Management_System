@@ -58,3 +58,8 @@ EMAIL_HOST_PASSWORD  ='-------' # password
 
 
 # Project is running Now :)
+
+
+# POSTMAN API Docmentation
+
+https://api.postman.com/collections/29347056-d20de209-9883-405d-a8f8-b4ca24362e1e?access_key=PMAT-01H8PGXS7JNY0Z21RRGBY47CYQ
